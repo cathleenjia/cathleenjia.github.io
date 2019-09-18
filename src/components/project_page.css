@@ -1,0 +1,143 @@
+.project-page {
+  /* background-color: #F6F6F6; */
+}
+
+.project-title {
+  display: inline-block;
+  width: 43%;
+  margin-right: 7%;
+  margin-top: -20px;
+  vertical-align: top;
+}
+
+.project-description {
+  display: inline-block;
+  width: 50%;
+  vertical-align: top;
+}
+
+.project-details {
+  margin: 2px 0px 2px 0px;
+}
+
+/* sections */
+
+.project-img {
+  width: 100%;
+  margin: 24px 0px 24px 0px;
+}
+
+.project-section {
+  margin: 54px 0px 54px 0px;
+}
+
+.section-headers {
+  display: inline-block;
+  width: 43%;
+  margin-right: 7%;
+  margin-top: -20px;
+
+  vertical-align: top;
+}
+
+.section-subheader {
+  margin-bottom: 24px;
+}
+
+.section-content {
+  display: inline-block;
+  width: 50%;
+  margin-top: 32px;
+
+  vertical-align: top;
+}
+
+/* table of contents */
+
+.table-of-contents {
+  position: fixed;
+  left: 0px;
+  top: 0;
+  margin-top: 120px;
+}
+
+.toc-name {
+  display: inline-block;
+
+  font-family: 'spaceGrotesk', sans-serif;
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 27.2px;
+  color: #2B1D0D;
+  margin: 4px 0px 0px 0px;
+
+  cursor: pointer;
+}
+
+.toc-item {
+  margin: 12px 0px 12px 0px;
+}
+
+.toc-item::before {
+  content: '';
+  display: inline-block;
+  width: 20px;
+  height: 2px;
+  background: #2B1D0D;
+}
+
+.slide-in {
+  left: 8px;
+  position: relative;
+  animation: slide-in 0.1s ease;
+}
+
+.slide-out {
+  left: 0px;
+  position: relative;
+  animation: slide-out 0.1s ease;
+}
+
+.hidden {
+  display: none;
+
+  transition: 2s;
+}
+
+@keyframes slide-in{
+    from { left: 32px; opacity: 0;}
+    to { left: 8px; opacity: 1;}
+}
+
+@keyframes slide-out{
+    from { left: -32px; opacity: 0;}
+    to { left: 0px; opacity: 1;}
+}
+
+@media only screen and (max-width: 1100px) {
+  .project-title {
+    width: 100%;
+  }
+
+  .project-description {
+    width: 100%;
+  }
+
+  .section-headers {
+    width: 100%;
+    margin-bottom: 0;
+  }
+
+  .section-content {
+    width: 100%;
+    margin-top: 0;
+  }
+
+  .section-subheader {
+    margin-bottom: 0;
+  }
+
+  h1 {
+    margin-bottom: 0;
+  }
+}

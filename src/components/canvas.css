@@ -1,0 +1,38 @@
+.myCanvas {
+  position: fixed;
+  z-index: -1;
+}
+
+.background {
+  width: 100vw;
+  height: 200vw;
+  z-index: -2;
+  position: fixed;
+}
+
+.background-circle {
+  border-radius: 50%;
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  z-index: -2;
+
+  height: 0vw;
+  width: 0vw;
+
+  transition: 0s;
+
+}
+
+.grow-circle {
+  width: 200vw;
+  height: 200vw;
+  transition: 1s !important;
+}
+
+
+@keyframes grow-circle{
+    from { height: 0px; width: 0px;}
+    to { height: 100vw; width: 100vw;}
+}

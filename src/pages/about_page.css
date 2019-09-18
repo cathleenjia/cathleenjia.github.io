@@ -1,0 +1,38 @@
+.about-title {
+  display: inline-block;
+  width: 43%;
+  margin-right: 7%;
+  margin-top: -20px;
+  vertical-align: top;
+}
+
+.about-description {
+  display: inline-block;
+  width: 50%;
+  vertical-align: top;
+}
+
+.about-header {
+  font-family: 'spaceGrotesk', sans-serif;
+  font-size: 66px;
+  font-weight: 500;
+  line-height: 72.6px;
+  color: #2B1D0D;
+  margin: 32px 0px 32px 0px;
+  padding: 0;
+}
+
+.me-img {
+  width: 100%;
+  height: auto;
+}
+
+@media only screen and (max-width: 1000px) {
+  .about-title {
+    width: 100%;
+  }
+
+  .about-description {
+    width: 100%;
+  }
+}
