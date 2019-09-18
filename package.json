@@ -2,7 +2,7 @@
   "name": "my-app",
   "version": "0.1.0",
   "private": true,
-  "homepage": "https://cathleenjia.github.io",
+  "homepage": "https://cathleenjia.github.io/my-app/",
   "dependencies": {
     "classnames": "^2.2.6",
     "gh-pages": "^2.1.1",
