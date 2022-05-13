@@ -1,0 +1,70 @@
+.about-title {
+  display: inline-block;
+  width: 43%;
+  margin-right: 7%;
+  margin-top: -20px;
+  vertical-align: top;
+}
+
+.about-description {
+  display: inline-block;
+  width: 50%;
+  vertical-align: top;
+}
+
+.about-description ul {
+  list-style-type: none;
+  padding: 0;
+}
+
+.about-description ul li {
+  margin-bottom: 4px;
+}
+
+.about-header {
+  font-family: 'spaceGrotesk', sans-serif;
+  font-size: 66px;
+  font-weight: 500;
+  line-height: 72.6px;
+  color: #2B1D0D;
+  margin: 32px 0px 32px 0px;
+  padding: 0;
+}
+
+.me-img {
+  width: 100%;
+  height: auto;
+  z-index:1;
+  margin-top: -25px;
+}
+
+.sticker {
+  font-size: 70px;
+  position: relative;
+  z-index: 10;
+  width: 50px;
+
+  animation-name: spin;
+  animation-duration: 5000ms;
+  animation-iteration-count: infinite;
+  animation-timing-function: linear;
+}
+
+@keyframes spin {
+    from {
+        transform:rotate(0deg);
+    }
+    to {
+        transform:rotate(360deg);
+    }
+}
+
+@media only screen and (max-width: 1000px) {
+  .about-title {
+    width: 100%;
+  }
+
+  .about-description {
+    width: 100%;
+  }
+}

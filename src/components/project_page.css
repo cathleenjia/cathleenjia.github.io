@@ -1,0 +1,180 @@
+.project-page {
+  background-color: #ffffff;
+}
+
+.project-wrapper {
+  display: grid;
+  grid-template-columns: minmax(0, 1fr) 150px;
+  grid-template-areas: "nav nav" "content toc";
+  column-gap: 70px;
+  align-items: start;
+  padding: 0 1.667rem;
+  max-width: 75rem;
+  margin: 0 auto;
+}
+
+.project-content {
+  grid-area: content;
+  justify-self: End;
+  margin: 0;
+}
+
+.project-content canvas {
+  display: none;
+}
+
+.table-of-contents {
+  grid-area: toc;
+  position: sticky;
+  top: 0;
+  cursor: default;
+  display: flex;
+  flex-direction: column;
+  padding-top: 50px;
+}
+
+/* header section */
+
+.project-header {
+  display: flex;
+  margin-bottom: 30px;
+}
+
+.project-title {
+  min-width: 350px;
+  vertical-align: top;
+}
+
+.project-description {
+  padding-left: 17%;
+  vertical-align: top;
+}
+
+.project-metadata {
+  display: inline-block;
+  width: 190px;
+  padding-right: 20px;
+  vertical-align:top;
+}
+
+.project-metadata p {
+    margin: 10px 0px;
+}
+
+/* sections */
+
+.project-section {
+  padding: 50px 0 0 0;
+}
+
+.image-wrapper {
+  border-style: outset;
+  border-color: #000000;
+  border-width: 1px;
+  background-color: #ffffff;
+}
+
+.column-65-30 {
+  display: flex;
+  flex-direction: row;
+  margin: 40px 0 0 0;
+}
+
+.column-65-30 p{
+  margin-top: 0;
+}
+
+.column-65 {
+  width: 65%;
+  margin-right: 5%;
+}
+
+.column-30 {
+  width: 30%;
+}
+
+.column-wrapper-50-50 {
+  display: grid;
+  grid-template-areas: "left right";
+  grid-column-gap: 50px;
+  /* margin: 40px 0 0 0; */
+}
+
+
+.column-50-50 {
+  width: 100%;
+}
+
+/* .project-column-text .muted-label {
+  margin-bottom: 10px;
+} */
+
+/* table of contents */
+.sticky-nav {
+  position: sticky;
+}
+
+.toc-item {
+  margin: 5px 0px;
+  line-height: normal;
+}
+
+.toc-item:hover{
+color: #0062BC;
+}
+
+.active {
+  color: #0062BC;
+}
+
+.active::before {
+  content: "✹";
+  color: #0062BC;
+  margin-left: -16px;
+  margin-right: 5px;
+}
+
+@media only screen and (max-width: 900px) {
+
+  html, body {
+    overflow-x: hidden;
+  }
+
+  .table-of-contents {
+    display: none;
+  }
+
+  .project-wrapper {
+    display: block;
+}
+}
+
+@media only screen and (max-width: 750px) {
+
+  .project-header {
+    flex-direction: column;
+  }
+
+  .project-description {
+    padding: 0;
+  }
+}
+
+@media only screen and (max-width: 600px) {
+
+  .column-wrapper-50-50, .column-65-30 {
+    display: block;
+  }
+
+  .column-65 {
+    width: 100%;
+    margin: 0;
+    padding-bottom: 40px;
+  }
+
+  .column-30 {
+    width: 100%;
+    margin: 0;
+  }
+
+}
