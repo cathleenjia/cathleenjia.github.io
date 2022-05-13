@@ -18,7 +18,7 @@
     "build": "react-scripts build",
     "test": "react-scripts test",
     "predeploy": "npm run build",
-    "deploy": "echo 'cathleenmjia.com' > ./build/CNAME && gh-pages -d src",
+    "deploy": "echo 'cathleenmjia.com' > ./build/CNAME && gh-pages -d build",
     "eject": "react-scripts eject"
   },
   "eslintConfig": {
