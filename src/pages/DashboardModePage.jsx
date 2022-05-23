@@ -35,7 +35,7 @@ function DashboardModePage() {
                 </div>
 
                 <div className="project-description">
-                  <p>Prototyped and shipped a presentation mode for Contour, Palantir’s point and click data analysis product, which was critical to Army workflows</p>
+                  <p>Prototyped and shipped a presentation mode for Contour, Palantir’s point and click data analysis product, which was critical to the Afghanistan evacuations</p>
 
                   <div className="project-metadata">
                     <p className="muted-label">Team</p>
@@ -220,7 +220,8 @@ function DashboardModePage() {
                   subheader="Launch & impact">
                   <p>Since launching in 2021, Contour dashboard mode has driven decision making for many customers including:</p>
                   <ul>
-                    <li>COVID-related supplyy chain disruptions</li>
+                    <li>Afghanistan evacuations</li>
+                    <li>COVID-related supply chain disruptions</li>
                     <li>Army readiness workflows</li>
                   </ul>
                   <p><a href="https://www.palantir.com/docs/foundry/contour/dashboards-overview/" target="_blank">Read full product documentation here↗</a></p>
