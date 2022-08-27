@@ -61,7 +61,7 @@ h3 {
   line-height: 50px;
   font-weight: 500;
   color: #000000;
-  opacity: 40%;
+  opacity: 40% !important;
   margin: 5px 0;
 }
 
@@ -79,7 +79,7 @@ h5 {
   line-height: 24px;
   font-weight: 500;
   color: #000000;
-  opacity: 50%;
+  opacity: 50% !important;
   margin: 15px 0;
 }
 
