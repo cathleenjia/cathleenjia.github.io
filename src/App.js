@@ -5,7 +5,7 @@ import './App.css';
 import ProjectPreview from "./components/ProjectPreview"
 
 import Home from "./pages/Home"
-import HelpAndSupportPage from "./pages/HelpAndSupportPage"
+import SlateMultipageAppsPage from "./pages/SlateMultipageAppsPage"
 import DashboardModePage from "./pages/DashboardModePage"
 import AboutPage from "./pages/AboutPage"
 import ScrollToTop from "./ScrollToTop"
@@ -18,8 +18,8 @@ function App() {
       <ScrollToTop />
       <div>
         <Route exact path="/" component={Home} />
-        <Route path="/helpandsupport" component={HelpAndSupportPage} />
-        <Route path="/dashboardmode" component={DashboardModePage} />
+        <Route path="/slate-multipage-apps" component={SlateMultipageAppsPage} />
+        <Route path="/contour-dashboards" component={DashboardModePage} />
         <Route path="/about" component={AboutPage} />
       </div>
     </Router>

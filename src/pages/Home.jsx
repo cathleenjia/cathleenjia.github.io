@@ -12,11 +12,11 @@ import ScrollToTop from "../ScrollToTop"
 
 
 
-const OPACITY_STEPS = 20;
+{/*const OPACITY_STEPS = 20;
 let timer = undefined;
 let curr = 0;
 let next = 1;
-const BACKGROUND_COLORS = [['#FFFFFF', '#F0E4DB'], ['#AFE6FB', '#769EE5'], ['#dbafaf', '#fc827e'], ['#D9C950', "#b0a130"], ['#FEFABF', '#E9B484'], ['#EF906F', '#D3674E']];
+const BACKGROUND_COLORS = [['#FFFFFF', '#F0E4DB'], ['#dbafaf', '#fc827e'], ['#AFE6FB', '#769EE5'], ['#D9C950', "#b0a130"], ['#FEFABF', '#E9B484'], ['#EF906F', '#D3674E']];
 class Home extends React.Component {
   constructor(props) {
     super(props);
@@ -96,35 +96,33 @@ class Home extends React.Component {
     this.ct = ctx;
   }
 
-  render() {
+  render() { */}
+
+  function Home() {
 
     return (
       <>
       <ScrollToTop />
-      <div className="background" style={{backgroundColor: this.state.currBackgroundColor[0]}}></div>
+      {/*<div className="background" style={{backgroundColor: this.state.currBackgroundColor[0]}}></div>
       <Canvas className="canvas" setContext={this.setContext}/>
-      <div onMouseMove={this.handleMouseMove}>
+      <div onMouseMove={this.handleMouseMove}>*/}
+      <div style={{backgroundColor: "#ffffff"}}>
         <div className="home-wrapper">
 
 
             <NavBarV2/>
-            <header className="home-intro">
-                  <span className="intro-suisseintl">Cathleen Jia is a </span>
-                <span className="intro-tag">✹ product designer</span>
-                <span className="intro-romanabt"> & aspiring artist</span>
-                <span className="intro-romanabt"> currently based in San Francisco</span>
-
-                {/* <Link to ='/about'><h1 className="header1 link" href="">More about me &rarr;</h1></Link> */}
-            </header>
+            <div className="home-block">
+              <h1>Cathleen Jia is a product designer based in San Francisco, currently working at Palantir.</h1>
+            </div>
 
             <p>Select work↘</p>
             <hr class="solid-divider"/>
 
             <div className="projects">
-              <ProjectPreview name="🔒  Palantir &mdash; Contour Dashboards" description="Designed MVP of presentation product in Foundry" imgUrl={require("../assets/dashboard-preview.png")} side="project_preview_left" link="/dashboardmode"/>
-              <ProjectPreview name="🔒  Palantir &mdash; Help & Support" description="Designed long term help and support vision for Foundry" imgUrl={require("../assets/help-and-support-preview.png")} side="project_preview_right" link="/helpandsupport"/>
-              <ExternalLinkPreview name="Uber &mdash; Lifetime points" description="Designed MVP of new rewards marketplace" tag="See deck↗️" imgUrl={require("../assets/uber-preview.png")} side="project_preview_left" link="https://docs.google.com/presentation/d/1evs8jAIljBzWC-IygrwL09F1eJbYhNLZs9v_tkxx5K0/edit?usp=sharing"/>
-              <ExternalLinkPreview name="Google &mdash; Omnisearch" description="Designed and developed experimental feature" tag="See deck↗️" imgUrl={require("../assets/google-preview.png")} side="project_preview_right" link="https://docs.google.com/presentation/d/1DpGWyq0C0SWj-vsyaT3rZbNqnxvuHtmA1YmeeqCK9-U/edit?usp=sharing"/>
+              <ProjectPreview name="🔒&nbsp; Palantir &mdash; Slate multipage applications" description="Enabling app developers to build well-architected multipaged applications more easily" imgUrl={require("../assets/dashboard-preview.png")} side="project-preview-left" link="/slate-multipage-apps"/>
+              <ProjectPreview name="🔒&nbsp; Palantir &mdash; Contour dashboards" description="Enabling data analysts to seamlessly build dashboards that stakeholders can confidently rely on" imgUrl={require("../assets/help-and-support-preview.png")} side="project-preview-right" link="/contour-dashboards"/>
+              <ExternalLinkPreview name="Uber &mdash; Lifetime points" description="Improving driver long term retention" tag="See deck↗️" imgUrl={require("../assets/uber-preview.png")} side="project-preview-left" link="https://docs.google.com/presentation/d/1evs8jAIljBzWC-IygrwL09F1eJbYhNLZs9v_tkxx5K0/edit?usp=sharing"/>
+              <ExternalLinkPreview name="Google &mdash; Omnisearch" description="Designed and developed experimental feature" tag="See deck↗️" imgUrl={require("../assets/google-preview.png")} side="project-preview-right" link="https://docs.google.com/presentation/d/1DpGWyq0C0SWj-vsyaT3rZbNqnxvuHtmA1YmeeqCK9-U/edit?usp=sharing"/>
             </div>
 
             <Footer/>
@@ -132,10 +130,10 @@ class Home extends React.Component {
           </div>
 
         </div>
-        <div className={`background-circle ${this.state.numDots > 3000 ? 'grow-circle' : ''}`} style={{backgroundColor: this.state.nextBackgroundColor[0]}}/>
+        {/*<div className={`background-circle ${this.state.numDots > 3000 ? 'grow-circle' : ''}`} style={{backgroundColor: this.state.nextBackgroundColor[0]}}/>*/}
       </>
     );
   }
-}
+{/*}*/}
 
 export default Home;

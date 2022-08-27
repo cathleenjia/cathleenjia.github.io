@@ -29,10 +29,10 @@ class NavBar extends React.Component {
 
       return (
         <div className="nav">
-          <Link to ="/"><h2 className="inverse">✹</h2></Link>
+          <Link to ="/"><h4 className="inverse">Cathleen Jia</h4></Link>
           <div className="nav-menu">
-            <Link to ="/" className="nav-item">Work</Link>
-            <Link to ="/about" className="nav-item">About</Link>
+            <Link to ="/" className="nav-item"><h4 className="inverse">Work</h4></Link>
+            <Link to ="/about" className="nav-item"><h4 className="inverse">About</h4></Link>
           </div>
         </div>
       );

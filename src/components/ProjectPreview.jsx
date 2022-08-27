@@ -14,14 +14,14 @@ class ProjectPreview extends React.Component {
       }
 
       return (
-        <Link to={this.props.link} className={classnames('project_preview', this.props.side)}>
+        <Link to={this.props.link} className={classnames('project-preview', this.props.side)}>
           <div style={style} className="project-preview-img img-normal"></div>
-          <div style={{display:"flex", flexDirection:"column"}}>
-            <div style={{display:"flex"}}>
-              <h4 className="project-preview-title">{this.props.name}</h4>
-              <h4 className="project-preview-title" style={{marginLeft:"auto", opacity:"50%"}}>{this.props.tag}</h4>
+          <div style={{display:"flex", flexDirection:"row"}}>
+            <div style={{display:"flex", flexDirection:"column", width: "80%"}}>
+              <h1>{this.props.name}</h1>
+              <h2 style={{marginTop: "0px"}}>{this.props.description}</h2>
             </div>
-            <p className="footer-label">{this.props.description}</p>
+              <h1 style={{marginLeft:"auto", opacity:"50%"}}>{this.props.tag}</h1>
           </div>
         </Link>
       );
