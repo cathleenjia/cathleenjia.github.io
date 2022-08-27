@@ -32,7 +32,7 @@ function SlateMultipageAppsPage() {
                 <h2>Slate Multipage Applications</h2>
               </div>
               <div className="column-right">
-                <p>Set the long term vision for support workflows in Foundry, Palantir’s platform for connecting, transforming, analyzing, and operationalizing data.</p>
+                <p>Designed and shaped product direction for a new workstream in Palantir’s app building product that is modeled after React Router to enable app developers to build well-architected multipage apps more easily.</p>
                 <div className="project-metadata">
                   <h5>Team</h5>
                   <p>1 product manager<br />

@@ -33,7 +33,7 @@ function DashboardModePage() {
                 <h2>Contour Dashboards</h2>
               </div>
               <div className="column-right">
-                <p>Prototyped and shipped a presentation mode for Contour, Palantir’s point and click data analysis product, which was critical to the Afghanistan evacuations</p>
+                <p>Designed and shipped a new workstream in Palantir’s point and click data analysis product to enable data analysts seamlessly build auto-updating and interactive documents that stakeholders can confidently rely on.</p>
                 <div className="project-metadata">
                   <h5>Team</h5>
                   <p>1 product manager<br />
