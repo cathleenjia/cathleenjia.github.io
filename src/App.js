@@ -1,5 +1,5 @@
 import React from 'react';
-import { BrowserRouter as Router, Route, Link } from "react-router-dom";
+import { BrowserRouter as Router, Route, Link, Switch } from "react-router-dom";
 import './App.css';
 
 import ProjectPreview from "./components/ProjectPreview"
@@ -17,10 +17,12 @@ function App() {
     <Router>
       <ScrollToTop />
       <div>
-        <Route exact path="/" component={Home} />
-        <Route path="/slate-multipage-apps" component={SlateMultipageAppsPage} />
-        <Route path="/contour-dashboards" component={DashboardModePage} />
-        <Route path="/about" component={AboutPage} />
+        <Switch>
+          <Route exact path="/" component={Home} />
+          <Route path="/slate-multipage-apps" component={SlateMultipageAppsPage} />
+          <Route path="/contour-dashboards" component={DashboardModePage} />
+          <Route path="/about" component={AboutPage} />
+        </Switch>
       </div>
     </Router>
 
