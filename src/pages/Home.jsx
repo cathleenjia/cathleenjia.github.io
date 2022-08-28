@@ -106,7 +106,7 @@ class Home extends React.Component {
       {/*<div className="background" style={{backgroundColor: this.state.currBackgroundColor[0]}}></div>
       <Canvas className="canvas" setContext={this.setContext}/>
       <div onMouseMove={this.handleMouseMove}>*/}
-      <div style={{backgroundColor: "#ffffff"}}>
+      <div style={{backgroundColor: "#edeef1"}}>
         <div className="home-wrapper">
 
 
