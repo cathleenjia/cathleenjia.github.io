@@ -136,11 +136,21 @@ li {
 
 /* dialog header */
 ._ovIFV {
+  display: hidden;
+  background-color: #fff!important;
   font-family: 'HelveticaNowDisplay', serif;
   font-size: 24px !important;
   font-weight: 500;
-  background-color: #fff!important;
   color: #000000 !important;
+}
+
+._ovIFV::after {
+  content: "\ View my resume or contact me for password.";
+  font-family: 'HelveticaNowDisplay', serif;
+  font-size: 16px;
+  font-weight: 500;
+  color: #000000;
+  opacity: 0.5;
 }
 
 /* input wrapper */
